@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Veterinaria - Amigos Peludos</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+  <header>
+    <a href="#" class="logo"><i class='bx bx-paw'></i>Amigos Peludos</a>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="navbar">
+      <a href="#home" class="active">INICIO</a>
+      <a href="#about">ACERCA DE NOSOTROS</a>
+      <a href="#services">SERVICIOS</a>
+      <a href="#team">NUESTRO EQUIPO</a>
+      <a href="#contact">CONTACTO</a>
+    </nav>
+  </header>
+
+  <section id="home" class="home-banner">
+    <div class="banner">
+      <h1>¡Cuidamos a tus amigos peluditos!</h1>
+      <p>En Amigos Peludos ofrecemos atención veterinaria de calidad para mascotas de todo tipo.</p>
+      <a href="#services" class="btn">Conoce nuestros servicios</a>
+    </div>
+  </section>
+
+  <section id="about" class="about-banner">
+    <h2>¿Quiénes somos?</h2>
+    <p>En Amigos Peludos, nos dedicamos a brindar la mejor atención a tus mascotas. Nuestro equipo está formado por profesionales altamente capacitados y con pasión por el bienestar animal.</p>
+  </section>
+
+  <section id="services">
+    <h2>Servicios</h2>
+    <div class="services-container">
+      <div class="service">
+        <i class='bx bx-briefcase'></i>
+        <h3>Consultas generales</h3>
+        <p>Realizamos exámenes físicos completos y diagnósticos para prevenir y tratar enfermedades.</p>
+        <a href="#" class="btn" onclick="toggleDetails(event, 'consultas-details')">Más info</a>
+      </div>
+      <div class="service">
+        <i class='bx bx-syringe'></i>
+        <h3>Vacunación</h3>
+        <p>Aplicamos vacunas esenciales para proteger a tu mascota de enfermedades contagiosas.</p>
+        <a href="#" class="btn" onclick="toggleDetails(event, 'vacunas-details')">Más info</a>
+      </div>
+      <div class="service">
+        <i class='bx bx-scissors'></i>
+        <h3>Cirugías</h3>
+        <p>Contamos con un quirófano equipado para realizar cirugías de baja y mediana complejidad.</p>
+        <a href="#" class="btn" onclick="toggleDetails(event, 'cirugias-details')">Más info</a>
+      </div>
+      <div class="service">
+        <i class='bx bx-bone'></i>
+        <h3>Hospitalización</h3>
+        <p>Brindamos atención médica especializada a mascotas que requieren hospitalización.</p>
+        <a href="#" class="btn" onclick="toggleDetails(event, 'hospitalizacion-details')">Más info</a>
+      </div>
+    </div>
+
+    <div id="consultas-details" class="details hidden">
+      <h3>Detalles sobre Consultas Generales</h3>
+      <p>En nuestras consultas generales, realizamos un examen físico completo, análisis de laboratorio y asesoramiento sobre la salud de su mascota. Nuestros veterinarios están capacitados para diagnosticar y tratar diversas condiciones de salud.</p>
+      <p>Además, ofrecemos consejos sobre nutrición, vacunación y prevención de enfermedades, asegurando que su mascota tenga una vida saludable y feliz.</p>
+      <button class="btn" onclick="toggleDetails(event, 'consultas-details')">Cerrar</button>
+    </div>
+
+    <div id="vacunas-details" class="details hidden">
+      <h3>Detalles sobre Vacunación</h3>
+      <p>Nuestro servicio de vacunación asegura que su mascota esté protegida contra enfermedades comunes. Ofrecemos un plan de vacunación adaptado a cada tipo de mascota.</p>
+      <button class="btn" onclick="toggleDetails(event, 'vacunas-details')">Cerrar</button>
+    </div>
+
+    <div id="cirugias-details" class="details hidden">
+      <h3>Detalles sobre Cirugías</h3>
+      <p>Contamos con un quirófano moderno y personal capacitado para realizar cirugías necesarias, siempre priorizando la salud y el bienestar de su mascota. Desde procedimientos menores hasta cirugías más complejas, estamos aquí para cuidar a tus amigos peludos.</p>
+      <button class="btn" onclick="toggleDetails(event, 'cirugias-details')">Cerrar</button>
+    </div>
+
+    <div id="hospitalizacion-details" class="details hidden">
+      <h3>Detalles sobre Hospitalización</h3>
+      <p>Nuestra área de hospitalización está equipada para brindar atención continua a mascotas que necesitan cuidados especiales. Contamos con monitoreo constante y personal capacitado.</p>
+      <button class="btn" onclick="toggleDetails(event, 'hospitalizacion-details')">Cerrar</button>
+    </div>
+  </section>
+
+  <section id="team">
+    <h2>Nuestro equipo</h2>
+    <p>Contamos con un equipo de veterinarios y personal altamente capacitado para brindarle la mejor atención a su mascota.</p>
+    <div class="team-container">
+      <div class="team-member">
+        <img src="veterinarios3.jpg" alt="Dr. Juan Pérez">
+        <h3>Dr. Juan Pérez</h3>
+        <p>Veterinario con más de 10 años de experiencia en el cuidado de mascotas.</p>
+      </div>
+      <div class="team-member">
+        <img src="veterinarios2.jpg" alt="Dra. Ana López">
+        <h3>Dra. Ana López</h3>
+        <p>Especialista en cirugía veterinaria y cuidado quirúrgico de mascotas.</p>
+      </div>
+      <div class="team-member">
+        <img src="veterinarios1.jpg" alt="Lic. Luisa Martínez">
+        <h3>Lic. Luisa Martínez</h3>
+        <p>Experta en nutrición y bienestar animal, dedicada a mejorar la salud de los peluditos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contáctanos</h2>
+    <div id="error-message" class="error-message hidden">Por favor, revisa la información ingresada.</div>
+    <form onsubmit="return validateForm()">
+      <div class="input-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Ingresa tu nombre completo" required>
+      </div>
+      <div class="input-group">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" autocomplete="off" placeholder="Ingresa tu correo electrónico" required>
+      </div>
+      <div class="input-group">  
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" placeholder="Ingresa tu número de teléfono" required>
+      </div>
+      <div class="input-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+      </div>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+    <div class="contact-info">
+      <p><i class='bx bx-phone'></i> 3138931494</p>
+      <p><i class='bx bx-envelope'></i> mc215882@gmail.com</p>
+      <p><i class='bx bx-location-pin'></i> manzana N casa 20 Juan De Dios</p>
+    </div>
+  </section>
+
+  <script>
+    function toggleDetails(event, id) {
+      event.preventDefault();
+      const details = document.getElementById(id);
+      details.classList.toggle('hidden');
+    }
+
+    function toggleMenu() {
+      const navbar = document.querySelector('.navbar');
+      navbar.classList.toggle('active');
+    }
+
+    function validateForm() {
+      const nombre = document.getElementById('nombre').value;
+      const email = document.getElementById('email').value;
+      const telefono = document.getElementById('telefono').value;
+      const mensaje = document.getElementById('mensaje').value;
+      const errorMessage = document.getElementById('error-message');
+      const registeredEmails = ["test@example.com", "user@example.com"];
+      if (registeredEmails.includes(email)) {
+        errorMessage.textContent = "Este correo ya está registrado.";
+        errorMessage.classList.remove('hidden');
+        return false;
+      }
+      if (!nombre || !email || !telefono || !mensaje) {
+        errorMessage.classList.remove('hidden');
+        return false;
+      }
+      errorMessage.classList.add('hidden');
+      return true;
+    }
+  </script>
+
+</body>
+</html>

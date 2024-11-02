@@ -53,7 +53,7 @@ header {
 }
 
 .navbar a.active {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 section {
@@ -73,7 +73,7 @@ section {
 }
 
 .banner {
-  background-image: url('mascotas4.jpg');
+  background-image: url('/img/mascotas4.jpg');
   background-size: cover;
   background-position: center;
   padding: 40px;
@@ -211,7 +211,7 @@ h3 {
     flex-direction: column;
     position: absolute;
     top: 60px;
-    background-color: white;
+    background-color: #45a049;
     width: 100%;
     z-index: 100;
   }
